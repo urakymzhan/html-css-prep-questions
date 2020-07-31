@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+}
+code {
+    background-color: #e7e7e7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: black;
+}
+em {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 13px;
+    opacity: 0.3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    background-color: #ebf5e1;
+}
+main {
+    text-align: center;
+}
+
+h1 {
+    color: #e54e1e;
+    box-shadow: 0 2px 3px #b23c17;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.container {
+     text-align: left;
+     padding: 20px;
+}
+
+h3 {
+    margin-bottom: 1px;
+}
+h3::before {
+    content: "Q: ";
+    color: #7c42da;
+}
+p {
+    color: #737373;
+    margin: 0;
+    margin-left: 10px;
+}
+p::before {
+    content: "A: ";
+    color: #4caf50;
+}
