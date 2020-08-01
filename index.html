@@ -57,8 +57,18 @@
                 <code>Attribute selectors</code> (a[target] etc.)<br/>
             </p>
 
+            <h3> What is the CSS display property and can you give a few examples of its use? </h3>
+            <p>
+                The display property specifies the display behavior (the type of rendering box) of an element. <br/>
+                <code>display: none;</code><br/>
+                <code>display: inline;</code><br/>
+                <code>display: block;</code><br/>
+                <code>display: inline-block;</code> <br/>
+                Read more and check examples <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#:~:text=Specificity%20is%20the%20means%20by,different%20sorts%20of%20CSS%20selectors." target="_blank"> here.</a>
+            </p>
+
             <h3> What is CSS specificity? </h3>
-            <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Check <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#:~:text=Specificity%20is%20the%20means%20by,different%20sorts%20of%20CSS%20selectors." target="_blank"> MDN</a> to learn how they used and calculated.
+            <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Check <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank"> MDN</a> to learn how they used and calculated.
             </p>
 
             <h3> How can u highlight text in html? </h3>
@@ -157,6 +167,50 @@
                 Check <a href="https://css-tricks.com/almanac/properties/z/z-index/" target="_blank"> here for examples </a>
             </p>
 
+            <h3> Should you use !important? </h3>
+            <p>
+                When you’re wrestling with specificity, trying to override that one style, you may be tempted to add !important to your style. Think very carefully before you do so! It may seem harmless, but if you do this all over the place, you will soon find yourself in a big mess that you cannot get out of.<br>
+
+                What !important does, is make that particular style have the highest specificity possible. Nothing else can override it, apart from another !important. You might be able to see where this is going, but once you start using them, you’ll almost certainly get into a position where you need to override a rule marked as !important, which forces you to use another one. And so the cycle continues.<br>
+                <code>
+                    /* high specificity */<br>
+                    .large .navigation.navigation-large { <br>
+                        font-size: 2em;<br>
+                    }<br>
+
+                    /* will override the above, but it's dangerous! */<br>
+                    .navigation {<br>
+                        font-size: 3em !important;<br>
+                    }
+                </code>
+            </p>
+
+            <h3> What is the difference between <code>px</code>, <code>em</code> and <code>rem</code> sizing fonts? </h3>
+            <p>
+                <code>TL;DR:</code>
+
+                    <code>Pixels</code> are ignorant, don’t use them.
+                    Use <code>REMs</code> for sizes and spacing.
+                    Use <code>EMs</code> for media queries.<br>
+
+                Read more  <a href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px" target="_blank"> here </a>
+            </p>
+
+            <h3> What's the difference between the <code>nth-of-type()</code> and <code>nth-child()</code> selectors?</h3>
+
+            <p>
+                <code>TL;DR:</code><br>
+
+                    <code>:nth-child</code> selector, in “Plain English,” means select an element if:<br>
+
+                    It is a paragraph element<br>
+                    It is the second child of a parent<br>
+                    <code>:nth-of-type</code> selector, in “Plain English,” means:<br>
+
+                    Select the second paragraph child of a parent<br>
+
+                Read more  <a href="https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/" target="_blank"> here </a>
+            </p>
 
             <!-- RAPID Questions -->
             <h4>Quickly Answered Questions</h4>
@@ -197,6 +251,94 @@
             <h5>Coming soon! Check out this link for <a href="https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#table-of-contents" target="_blank">now!</a></h5>
 
 
+            <!-- BEHAVIROAL Questions -->
+            <h4>Behavioral Questions</h4>
+
+            <h3>When did you start experimenting with CSS?</h3>
+            <p>
+                The answer to this question gives you an idea of how much experience the job applicant has working with CSS. It can also tell you whether the person picked up the skill as a hobby or learned it in an academic or professional environment.<br>
+
+                What to look for in an answer:<br>
+
+                - Amount of experience with CSS<br>
+                - Interest in building websites<br>
+                - Excitement about new technology<br>
+                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
+            </p>
+
+
+            <h3>What is your favorite CSS feature?</h3>
+            <p>
+                It probably doesn’t matter what CSS feature your job applicant likes most. Finding out whether the person can speak freely about style sheets, however, shows that your applicant has a strong knowledge of CSS.<br>
+
+                What to look for in an answer:<br>
+
+                - Experience with CSS<br>
+                - Understanding of CSS<br>
+                - How to use CSS to save time<br>
+                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
+            </p>
+
+
+            <h3>Do you use CSS in combination with other markup or programming languages?</h3>
+            <p>
+                Web developers often rely on a few languages to build dynamic sites. The answer to this question shows that the applicant knows about other languages used to build sites. By prompting the person to name the languages, you make sure that the applicant has a deep understanding of the subject.<br>
+
+                What to look for in an answer:<br>
+                
+                - Interest in front-end design<br>
+                - Other language skills<br>
+                - Creative problem solving<br>
+                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
+            </p>
+
+            <h3>Can you tell me about a project that forced you to learn something new about CSS?</h3>
+            <p>
+                Asking this question encourages people to reflect on their experiences with CSS. The answer may reveal several things, such as how much experience applicants have with CSS and how they use critical thinking to solve difficult problems.<br>
+
+                What to look for in an answer:<br>
+
+                - Understanding of CSS<br>
+                - Amount of experience with CSS<br>
+                - Critical thinking<br>
+                Example: “I took a multidisciplinary class in college that created groups of librarians and engineers to work on unique projects. My group decided to digitize a large collection of handwritten poems in the library’s permanent collection. Making a style sheet that could accommodate the different sizes, shapes and qualities of the poems took a lot of effort.”
+            </p>
+
+            <h3>What’s your favorite project that required CSS?</h3>
+            <p>
+                This question gives you some insight into what the interviewee enjoys. The answer says more about the applicant’s personality than programming skills.<br>
+
+                What to look for in an answer:<br>
+
+                - Understanding of CSS's benefits<br>
+                - Creative problem solving<br>
+                - How applicant responds to challenges<br>
+                Example: “I helped a friend build an online magazine that published articles, photographs, music and all kinds of media. It wasn’t a hard project. In fact, it was pretty easy. I just loved watching how happy my simple CSS changes made him. Over a few hours, his website went from OK to excellent. It reminded me of why it’s important to know CSS, JavaScript and other common languages in today’s world. You can’t do anything without building a good website to show it off.”
+            </p>
+
+            <h3>Do you have a resource that you use when you can’t remember a CSS function?</h3>
+            <p>
+                Programmers can’t keep everything in their heads, so they rely on references when they remember specific functions and terms. The answer to this question shows that the applicant knows about reliable CSS resources that may come in handy when working on future projects.<br>
+
+                What to look for in an answer:<br>
+
+                - Deep understanding of CSS resources<br>
+                - Where to find CSS functions<br>
+                - Insider knowledge of CSS<br>
+                Example: “I helped a friend build an online magazine that published articles, photographs, music and all kinds of media. It wasn’t a hard project. In fact, it was pretty easy. I just loved watching how happy my simple CSS changes made him. Over a few hours, his website went from OK to excellent. It reminded me of why it’s important to know CSS, JavaScript and other common languages in today’s world. You can’t do anything without building a good website to show it off.”
+            </p>
+
+            <h3>What is your least favorite part of working with CSS?</h3>
+            <p>
+                All people have things that they don’t like about their jobs. An honest answer to this question can help you place an applicant with the right team. For instance, if a person loves finding errors in CSS files, you may want to hire that applicant to work on a project with creative people who prefer focusing on the big picture.<br>
+
+                What to look for in an answer:<br>
+
+                - Understanding the pros and cons of CSS<br>
+                - Knowing what role the applicant could play<br>
+                - Learning about the applicant's other interests<br>
+                Example: “CSS makes Web design a lot easier, but it still feels a little tedious. Ideally, I’d like to work with a dynamic language that lets users interact with websites. For the time being, though, I’m happy to hone my CSS skills and learn from more experienced people.”
+            </p>
 
             <!-- REFERANCE -->
             <div id="ref-wrapper">
@@ -206,7 +348,9 @@
                     <li><a href="http://learn.seytech.co/courses/htmlcss/prepation" target="_blank">seytech</a></li>
                     <li><a href="https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#table-of-contents" target="_blank">yangshun</a></li>
                     <li><a href="https://www.thatjsdude.com/interview/html.html#bdo" target="_blank">thatjsdude</a></li>
-                    <li><a href="https://www.thatjsdude.com/interview/css.html#float" target="_blank">thatjsdude</a></li>
+                    <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">w3schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
+                    <li><a href="https://www.indeed.com/hire/interview-questions/css?aceid=&gclid=Cj0KCQjwgo_5BRDuARIsADDEntQ7QUfXU7ohlfsPK1eitgOQCcgm1W2Kl56VPY_dCwYtHWnifLPCkWMaAp4xEALw_wcB" target="_blank">Indeed</a></li>
                 </ul>
             <div>
 
