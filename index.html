@@ -2,21 +2,84 @@
 <html>
 <head>
     <title>HTML && CSS Prep Questions</title>
-    <link rel="stylesheet" type="text/css" href="urakymzhan/index.css">
+    <!-- github css -->
+    <!-- <link rel="stylesheet" type="text/css" href="urakymzhan/index.css"> -->
+        <!-- local css -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
     <em>© Seytech Students</em>
     <main>
-        <h1>HTML && CSS Prep Questions</h1>
+        <h1>HTML && CSS Prep Questions<br/>
+            <span id="note">Click on questions to unlock the answers</span>
+        </h1>
 
         <div class="container">
+            
+            <h3> What does a doctype do?</h3>
+            <p>doctype is an instruction to the browser to inform about the version of html document and how browser should render it.</p>
+
             <h3> What is Semantic HTML? Can you tell me HTML 5 elements?</h3>
-    
-                <p>Semantic HTML introduces meaning to the web page rather than just presentation
-                for example <code>strong</code> instead of <code>b</code>
-                <code>header, aside, nav</code> instead of <code>div</code> </p>
+            <p>Semantic HTML introduces meaning to the web page rather than just presentation for example <code>strong</code> instead of <code>b</code> <code>header, aside, nav</code> instead of <code>div</code> </p>
+
+            <h3>Do all HTML tags have an end tag?</h3>
+            <p>No. There are some HTML tags that don't need a closing tag. For example: <code>image</code> tag, <code> br </code> tag</p>
+
+            <h3> What is the differences between div and span?</h3>
+            <p>The difference is that <code>span</code> gives the output with  <code>display:inline</code> and <code>div</code> gives the output with <code>display:block</code>. span is used when we need our elements to be shown in a line, one after the other.</p>
+
+
+            <h3> What is the use of the required attribute in HTML5? </h3>
+            <p>It forces a user to fill text on the text field or text area before submitting the form. It is used for form validation. Example:  <code> &lt;input type="text" name="name" required&gt; </code></p>
+
+            <h3> Explain the three main ways to apply CSS styles to a web page. When would you prefer which one? </h3>
+            <p>
+                Inline CSS - You can apply CSS style inside the HTML tags(elements) that’s called inline CSS.<br/>
+                Internal Style Sheet - You can apply CSS styles Inside &lt;head&gt; section in HTML using <code>&lt;style&gt;&lt;/style&gt;</code>.<br/>
+                External Style Sheet - Create another file save it with .css extension and then link this css file using <code>&lt;link&gt;</code>.<br/>
+            </p>
+
+            <h3> Could you describe the different kinds of selectors? </h3>
+            <p>
+                We can divide CSS selectors into five categories: <br/>
+                <code>Simple selectors</code>(id, class, name etc.)<br/>
+                <code>Combinator selectors</code>(descendant selector(space), child selector(>), adjacent sibling selector (+), general sibling selector (~) .)<br/>
+                <code>Pseudo-class selectors</code>(visited, hover, link, active etc.)<br/>
+                <code>Pseudo-elements selectors</code> (first-line, first-letter etc.)<br/>
+                <code>Attribute selectors</code> (a[target] etc.)<br/>
+            </p>
+
+            <h3> What is CSS specificity? </h3>
+            <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Check <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#:~:text=Specificity%20is%20the%20means%20by,different%20sorts%20of%20CSS%20selectors." target="_blank"> MDN</a> to learn how they used and calculated.
+            </p>
+
+            <h3> How can u highlight text in html? </h3>
+            <p>By using <i>&lt;mark&gt; </i> element.  Ex: Hey I am <code>&lt;mark&gt;</code> marked <code>&lt;/mark&gt;</code> text!</p>
+
+
+            <h3> When should you use section, div or article? </h3>
+            <p>
+                <code>section</code>, group of content inside is related to a single theme, and should appear as an entry in an outline of the page. It’s a chunk of related content, like a subsection of a long article, a major part of the page (eg the news section on the homepage), or a page in a webapp’s tabbed interface. A section normally has a heading (title) and maybe a footer too.<br/>
+
+                <code>article</code>, represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.<br/>
+
+                <code>div</code>, on the other hand, does not convey any meaning, aside from any found in its class, lang and title attributes.
+            </p>
+
+            <h3> What does float do? </h3>
+            <p>
+                <code>float</code> pushes an element to the sides of a page with text wrapped around it. you can create entire page or a smaller area by using float. if size of a floated element changes, text around it will re-flow to accommodate the changes. You can have float left, right, none or inherit.<br/>
+                if you set, <code>'float: left;'</code> for an image, it will move to the left until the margin, padding or border of another block-level element is reached. The normal flow will wrap around on the right side.
+            </p>
+
+
         </div>
     </main>
+
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script type="text/javascript" src="urakymzhan/index.js"></script> -->
+
 </body>
 </html>
