@@ -26,11 +26,12 @@ body {
     font-family: 'Patrick Hand', cursive;
     background-color: #ebf5e1;
 }
+
 main {
     text-align: center;
 }
 
-h1 {
+#title {
     color: #e54e1e;
     box-shadow: 0 2px 3px #b23c17;
     display: inline-block;
@@ -39,11 +40,17 @@ h1 {
 }
 
 h4 {
-    color: #ff5722;
+    color: #2196f3;
+}
+h4::before {
+    content: "# ";
+    font-size: 30px;
 }
 .container {
-     text-align: left;
-     padding: 10px 40px 80px 40px;
+    text-align: left;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 10px auto 40px auto;
 }
 
 h3 {
@@ -54,10 +61,13 @@ h3::before {
     color: #7c42da;
 }
 p {
-    color: #737373;
+    color: #5c5c5c;
     margin: 0;
     margin-left: 10px;
     display: none;
+    background-color: #ffff99;
+    padding: 5px 12px;
+    border-radius: 5px;
 }
 .blockP {
     display: block;
@@ -65,4 +75,18 @@ p {
 p::before {
     content: "A: ";
     color: #4caf50;
+    display: block;r
+}
+
+/* REFERANCE */
+#referance-title {
+    margin-bottom: 1px;
+    font-size: 24px;
+    border-top: 1px solid;
+}
+#referance {
+    margin-top: 1px;
+}
+#referance li {
+    font-size: 14px;
 }
