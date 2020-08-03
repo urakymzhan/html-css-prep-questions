@@ -16,6 +16,10 @@ em {
     opacity: 0.3;
 }
 
+i  {
+    text-decoration: underline;
+}
+
 #note {
     font-size: 12px;
     color: gray;

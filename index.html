@@ -1,465 +1,1356 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML && CSS Interview Questions" />
+    <meta name="keywords" content="HTML, CSS, Interview, Questions" />
+    <meta name="author" content="Ulan Rakymzhanov for Seytech School" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML && CSS Prep Questions</title>
     <!-- github css -->
-    <link rel="stylesheet" type="text/css" href="urakymzhan/index.css">
-        <!-- local css -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="urakymzhan/index.css" />
+    <!-- local css -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <em>© Seytech Students</em>
     <main>
-        <h1 id="title">
-            <span style="color: #795548">HTML </span> && <span style="color: #795548">CSS</span> 
-            Interview Preparation Questions<br/>
-            <span id="note">Click on questions to unlock the answers</span>
-        </h1>
-
-        <div class="container">
-
-
-            <!-- COMMON Questions -->
-            <h4>Common Questions</h4>
-            
-            <h3> What does a doctype do?</h3>
-            <p>doctype is an instruction to the browser to inform about the version of html document and how browser should render it.</p>
-
-            <h3> What is Semantic HTML? Can you tell me HTML 5 elements?</h3>
-            <p>Semantic HTML introduces meaning to the web page rather than just presentation for example <code>strong</code> instead of <code>b</code> <code>header, aside, nav</code> instead of <code>div</code> </p>
-
-            <h3>Do all HTML tags have an end tag?</h3>
-            <p>No. There are some HTML tags that don't need a closing tag. For example: <code>image</code> tag, <code> br </code> tag</p>
-
-            <h3> What is the differences between div and span?</h3>
-            <p>The difference is that <code>span</code> gives the output with  <code>display:inline</code> and <code>div</code> gives the output with <code>display:block</code>. span is used when we need our elements to be shown in a line, one after the other.</p>
-
-
-            <h3> What is the use of the required attribute in HTML5? </h3>
-            <p>It forces a user to fill text on the text field or text area before submitting the form. It is used for form validation. Example:  <code> &lt;input type="text" name="name" required&gt; </code></p>
-
-            <h3> Explain the three main ways to apply CSS styles to a web page. When would you prefer which one? </h3>
-            <p>
-                Inline CSS - You can apply CSS style inside the HTML tags(elements) that’s called inline CSS.<br/>
-                Internal Style Sheet - You can apply CSS styles Inside &lt;head&gt; section in HTML using <code>&lt;style&gt;&lt;/style&gt;</code>.<br/>
-                External Style Sheet - Create another file save it with .css extension and then link this css file using <code>&lt;link&gt;</code>.<br/>
-            </p>
-
-            <h3> Could you describe the different kinds of selectors? </h3>
-            <p>
-                We can divide CSS selectors into five categories: <br/>
-                <code>Simple selectors</code>(id, class, name etc.)<br/>
-                <code>Combinator selectors</code>(descendant selector(space), child selector(>), adjacent sibling selector (+), general sibling selector (~) .)<br/>
-                <code>Pseudo-class selectors</code>(visited, hover, link, active etc.)<br/>
-                <code>Pseudo-elements selectors</code> (first-line, first-letter etc.)<br/>
-                <code>Attribute selectors</code> (a[target] etc.)<br/>
-            </p>
-
-            <h3> What is the CSS display property and can you give a few examples of its use? </h3>
-            <p>
-                The display property specifies the display behavior (the type of rendering box) of an element. <br/>
-                <code>display: none;</code><br/>
-                <code>display: inline;</code><br/>
-                <code>display: block;</code><br/>
-                <code>display: inline-block;</code> <br/>
-                Read more and check examples <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#:~:text=Specificity%20is%20the%20means%20by,different%20sorts%20of%20CSS%20selectors." target="_blank"> here.</a>
-            </p>
-
-            <h3> What is CSS specificity? </h3>
-            <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Check <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank"> MDN</a> to learn how they used and calculated.
-            </p>
-
-            <h3> How can u highlight text in html? </h3>
-            <p>By using <i>&lt;mark&gt; </i> element.  Ex: Hey I am <code>&lt;mark&gt;</code> marked <code>&lt;/mark&gt;</code> text!</p>
-
-
-            <h3> When should you use section, div or article? </h3>
-            <p>
-                <code>section</code>, group of content inside is related to a single theme, and should appear as an entry in an outline of the page. It’s a chunk of related content, like a subsection of a long article, a major part of the page (eg the news section on the homepage), or a page in a webapp’s tabbed interface. A section normally has a heading (title) and maybe a footer too.<br/>
-
-                <code>article</code>, represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.<br/>
-
-                <code>div</code>, on the other hand, does not convey any meaning, aside from any found in its class, lang and title attributes.
-            </p>
-
-            <h3> What does float do? </h3>
-            <p>
-                <code>float</code> pushes an element to the sides of a page with text wrapped around it. you can create entire page or a smaller area by using float. if size of a floated element changes, text around it will re-flow to accommodate the changes. You can have float left, right, none or inherit.<br/>
-                if you set, <code>'float: left;'</code> for an image, it will move to the left until the margin, padding or border of another block-level element is reached. The normal flow will wrap around on the right side.
-            </p>
-
-
-            <h3> How can you fix, "floated points don't add up to the height of a parent"? Basically how do you clear floats? </h3>
-            <p>
-                 You can use clear: both in an empty div <code> &lt;div style="clear: both;"&gt; &lt;/div&gt; </code>, you can use overflow hidden or scroll and you can float the parent as well. Check <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear" target="_blank">Examlpe here</a>
-            </p>
-            
-
-            <h3> How absolute, relative, fixed and static position differ? </h3>
-            <p>
-                <code>absolute</code>, place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent available then relatively place to the page itself.<br/>
-
-                <code>relative</code>, is position an element relative to itself (from where the element would be placed, if u don't apply relative positioning). for example, if u set position relative to an element and set top: 10px, it will move 10px down from where it would be normally.<br/>
-
-                <code>fixed</code>, element is positioned relative to viewport or the browser window itself. viewport doesn't changed if u scroll and hence fixed element will stay right in the same position.<br/>
-
-                <code>static</code>, element will be positioned based on the normal flow of the document. usually, u will use position static to remove other position might be applied to an element.<br/>
-
-                 Check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank"> MDN Docs for examples </a>
-            </p>
-
-            <h3> What are the differences between visibility hidden and display none? </h3>
-            <p>
-               <code>display:</code> none removes the element from the normal layout flow and allow other elements to fill in. <br/>
-               <code>visibility:</code> hidden tag is rendered, it takes space in the normal flow but doesn't show it<br/>
-
-                Check <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank"> here for examples </a>
-            </p>
-
-
-            <h3> What are the differences between inline, block and inline-block? </h3>
-            <p>
-                <code>inline</code>, elements do not break the flow. think of span it fits in the line. Important points about inline elements, margin/ padding will push other elements horizontally not vertically. Moreover, inline elements ignores height and width.<br/>
-
-                <code>block</code>, breaks the flow and dont sits inline. they are usually container like div, section, ul and also text p, h1, etc.<br/>
-
-                <code>inline-block</code>, will be similar to inline and will go with the flow of the page. Only differences is this this will take height and width.<br/>
-
-                Check <a href="https://www.w3schools.com/css/css_inline-block.asp" target="_blank"> here for examples </a>
-            </p>
-
-            <h3> What is Box Model?  What are the properties related to it? </h3>
-            <p>
-                Technically, height, width, padding and border are part of box model and margin is related to it.<br/>
-
-                <i>Extra:</i> Everything in a web page is a box where you can control size, position, background, etc. Each box/ content area is optionally surrounded by padding, border and margin. When you set height and width of an element, you set content height and width.<br>
-
-                Check <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank"> here for examples </a>
-            </p>
-
-            <h3> How <code>overflow</code> attribute works in CSS ? </h3>
-            <p>
-                The CSS overflow property controls what happens to content that is too big to fit into an area.<br>
-
-                Check <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_intro" target="_blank"> here for examples </a>
-            </p>
-
-            <h3> How do you align a p center-center inside a div? </h3>
-            <p>
-                <code>text-align: center</code> will do the horizontal alignment but <code>vertical-align: middle</code> will not work here. there are couple of different ways to solve this problem and one of them are positioning. You make the parent as relative position and child as absolute positioning. And then define all position parameter as sero and width 50% and height 30%.<br>
-
-                Check <a href="http://vanseodesign.com/css/vertical-centering/" target="_blank"> here for examples </a>
-            </p>
-
-
-            <h3> Describe z-index and how stacking context is formed? </h3>
-            <p>
-                The z-index property in CSS controls the vertical stacking order of elements that overlap. z-index only affects elements that have a position value which is not static.<br>
-
-                Without any z-index value, elements stack in the order that they appear in the DOM (the lowest one down at the same hierarchy level appears on top). Elements with non-static positioning (and their children) will always appear on top of elements with default static positioning, regardless of HTML hierarchy.<br>
-
-                A stacking context is an element that contains a set of layers. Within a local stacking context, the z-index values of its children are set relative to that element rather than to the document root. Layers outside of that context — i.e. sibling elements of a local stacking context — can't sit between layers within it. If an element B sits on top of element A, a child element of element A, element C, can never be higher than element B even if element C has a higher z-index than element B.<br>
-
-                Each stacking context is self-contained - after the element's contents are stacked, the whole element is considered in the stacking order of the parent stacking context. A handful of CSS properties trigger a new stacking context, such as opacity less than 1, filter that is not none, and transform that is notnone.<br>
-
-                Check <a href="https://css-tricks.com/almanac/properties/z/z-index/" target="_blank"> here for examples </a>
-            </p>
-
-            <h3> Should you use !important? </h3>
-            <p>
-                When you’re wrestling with specificity, trying to override that one style, you may be tempted to add !important to your style. Think very carefully before you do so! It may seem harmless, but if you do this all over the place, you will soon find yourself in a big mess that you cannot get out of.<br>
-
-                What !important does, is make that particular style have the highest specificity possible. Nothing else can override it, apart from another !important. You might be able to see where this is going, but once you start using them, you’ll almost certainly get into a position where you need to override a rule marked as !important, which forces you to use another one. And so the cycle continues.<br>
-                <code>
-                    /* high specificity */<br>
-                    .large .navigation.navigation-large { <br>
-                        font-size: 2em;<br>
-                    }<br>
-
-                    /* will override the above, but it's dangerous! */<br>
-                    .navigation {<br>
-                        font-size: 3em !important;<br>
-                    }
-                </code>
-            </p>
-
-            <h3> What is the difference between <code>px</code>, <code>em</code> and <code>rem</code> sizing fonts? </h3>
-            <p>
-                <code>TL;DR:</code>
-
-                    <code>Pixels</code> are ignorant, don’t use them.
-                    Use <code>REMs</code> for sizes and spacing.
-                    Use <code>EMs</code> for media queries.<br>
-
-                Read more  <a href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px" target="_blank"> here </a>
-            </p>
-
-            <h3> What's the difference between the <code>nth-of-type()</code> and <code>nth-child()</code> selectors?</h3>
-
-            <p>
-                <code>TL;DR:</code><br>
-
-                    <code>:nth-child</code> selector, in “Plain English,” means select an element if:<br>
-
-                    It is a paragraph element<br>
-                    It is the second child of a parent<br>
-                    <code>:nth-of-type</code> selector, in “Plain English,” means:<br>
-
-                    Select the second paragraph child of a parent<br>
-
-                Read more  <a href="https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/" target="_blank"> here </a>
-            </p>
-
-            <h3> Explain the term Responsive web design ? </h3>
-            <p>
-                It is a method in which we design and develop a web page according to the user activities and conditions which are based on various components like the size of the screen, portability of the web page on the different devices, etc. It is done by using different flexible layouts and grids.
-            </p>
-
-            <h3> How do we make a rounded corner by using CSS? </h3>
-            <p>
-                We can make a rounded corner by using the property <code>border-radius</code>. We can apply this property to any element.
-            </p>
-
-            <h3> What is CSS flexbox? </h3>
-            <p>
-                It allows you to design a flexible responsive layout structure without using any float or positioning property of CSS. To use CSS flexbox you need to define a flex container initially.
-            </p>
-
-            <h3> Write all the properties of the flexbox? </h3>
-            <p>
-                There are several properties of the flexbox that are used in the HTML webpage.<br>
-
-                They are:<br>
-
-                flex-direction<br>
-                flex-wrap<br>
-                flex-flow<br>
-                justify-content<br>
-                align-items<br>
-                align-content<br>
-            </p>
-
-            <h3> How can we add icons to the web page?</h3>
-            <p>
-                We can add icons to the HTML webpage by using an icon library like font-awesome.<br>
-
-                We have to add the name of the given icon class to any inline HTML element. ( &lt;i&gt; or  &lt;span&gt;) . Icons in the icon libraries are scalable vectors that can be customized with CSS.
-            </p>
-
-            <h3>What are the differences between relative and absolute in CSS?</h3>
-            <p>
-               The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px then the padding will shift to 10px in the left while absolute is totally relative to the non-static parent.<br>
-
-               It means, if we write left:10px then the result will be 10px far from the left edge of the parent element.
-            </p>
-
-            <h3>Differentiate between inline and block element?</h3>
-            <p>
-               Inline element does not have an element to set width and height and also it does not have the line break. Ex: <code>em, strong</code> etc.<br>
-               Block element specification:<br>
-
-                They do have the line break.<br>
-                They define the width by setting a container and also allow setting height.<br>
-                It can also contain an element that occurs in the inline element.<br>
-            </p>
-
-            <h3>What are empty elements?</h3>
-            <p>
-               HTML elements with no content are called empty elements. For example: &lt;br&gt;, &lt;hr&gt; etc.
-            </p>
-
-            <h3>What are the different new form element types in HTML 5?</h3>
-            <p>
-               Following is a list of 10 frequently used new elements in HTML 5:<br>
-
-                - Color<br>
-                - Date<br>
-                - Datetime-local<br>
-                - Email<br>
-                - Time<br>
-                - Url<br>
-                - Range<br>
-                - Telephone<br>
-                - Number<br>
-                - Search<br>
-                Check <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"> examples here </a>
-            </p>
-
-
-            <!-- RAPID Questions -->
-            <h4>Quickly Answered Questions</h4>
-
-
-            <h3>Does css properties are case sensitive?</h3>
-            <p>No</p>
-
-            <h3>Why css selectors mixed up with cases don't apply the styles?</h3>
-            <p>Because, html ID and classes are case sensitive.</p>
-
-            <h3>Does margin-top or margin-bottom has effect on inline element?</h3>
-            <p>No</p>
-
-            <h3>Does padding-top or padding-bottom has effect on inline element?</h3>
-            <p>No</p>
-
-            <h3>Does padding-left or padding-right or margin-left or margin-right has effect on inline element?</h3>
-            <p>Yes</p>
-
-            <h3>If you have a &lt;p&gt; element with font-size: 10rem, will the text be responsive when the user resizes / drags the browser window?</h3>
-            <p>No</p>
-
-            <h3>The pseudo class :checked will select inputs with type radio or checkbox, but not &lt;option&gt; elements.</h3>
-            <p>False</p>
-
-
-            <h3> In a HTML document, the pseudo <code>class :root</code> always refers to the &lt;html&gt; element.</h3>
-            <p>True</p>
-
-            <h3>The translate() function can move the position of an element on the z-axis.</h3>
-            <p>False</p>
-
-
-            <!-- ADVANCED Questions -->
-            <h4>Advanced Questions</h4>
-
-            <h5>Coming soon! Check out this link for <a href="https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#table-of-contents" target="_blank">now!</a></h5>
-
-
-            <!-- BEHAVIROAL Questions -->
-            <h4>Behavioral Questions</h4>
-
-            <h3>When did you start experimenting with CSS?</h3>
-            <p>
-                The answer to this question gives you an idea of how much experience the job applicant has working with CSS. It can also tell you whether the person picked up the skill as a hobby or learned it in an academic or professional environment.<br>
-
-                What to look for in an answer:<br>
-
-                - Amount of experience with CSS<br>
-                - Interest in building websites<br>
-                - Excitement about new technology<br>
-                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
-            </p>
-
-
-            <h3>What is your favorite CSS feature?</h3>
-            <p>
-                It probably doesn’t matter what CSS feature your job applicant likes most. Finding out whether the person can speak freely about style sheets, however, shows that your applicant has a strong knowledge of CSS.<br>
-
-                What to look for in an answer:<br>
-
-                - Experience with CSS<br>
-                - Understanding of CSS<br>
-                - How to use CSS to save time<br>
-                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
-            </p>
-
-
-            <h3>Do you use CSS in combination with other markup or programming languages?</h3>
-            <p>
-                Web developers often rely on a few languages to build dynamic sites. The answer to this question shows that the applicant knows about other languages used to build sites. By prompting the person to name the languages, you make sure that the applicant has a deep understanding of the subject.<br>
-
-                What to look for in an answer:<br>
-                
-                - Interest in front-end design<br>
-                - Other language skills<br>
-                - Creative problem solving<br>
-                Example: “I started using style sheets in high school. A few friends and I had been building a website about our favorite television shows. Eventually, the pages became a mess because they didn’t share a common aesthetic. The fonts and colors were different on every page. I learned how to use CSS so I could bring the pages into harmony without writing new HTML tags for each page.”
-            </p>
-
-            <h3>Can you tell me about a project that forced you to learn something new about CSS?</h3>
-            <p>
-                Asking this question encourages people to reflect on their experiences with CSS. The answer may reveal several things, such as how much experience applicants have with CSS and how they use critical thinking to solve difficult problems.<br>
-
-                What to look for in an answer:<br>
-
-                - Understanding of CSS<br>
-                - Amount of experience with CSS<br>
-                - Critical thinking<br>
-                Example: “I took a multidisciplinary class in college that created groups of librarians and engineers to work on unique projects. My group decided to digitize a large collection of handwritten poems in the library’s permanent collection. Making a style sheet that could accommodate the different sizes, shapes and qualities of the poems took a lot of effort.”
-            </p>
-
-            <h3>What’s your favorite project that required CSS?</h3>
-            <p>
-                This question gives you some insight into what the interviewee enjoys. The answer says more about the applicant’s personality than programming skills.<br>
-
-                What to look for in an answer:<br>
-
-                - Understanding of CSS's benefits<br>
-                - Creative problem solving<br>
-                - How applicant responds to challenges<br>
-                Example: “I helped a friend build an online magazine that published articles, photographs, music and all kinds of media. It wasn’t a hard project. In fact, it was pretty easy. I just loved watching how happy my simple CSS changes made him. Over a few hours, his website went from OK to excellent. It reminded me of why it’s important to know CSS, JavaScript and other common languages in today’s world. You can’t do anything without building a good website to show it off.”
-            </p>
-
-            <h3>Do you have a resource that you use when you can’t remember a CSS function?</h3>
-            <p>
-                Programmers can’t keep everything in their heads, so they rely on references when they remember specific functions and terms. The answer to this question shows that the applicant knows about reliable CSS resources that may come in handy when working on future projects.<br>
-
-                What to look for in an answer:<br>
-
-                - Deep understanding of CSS resources<br>
-                - Where to find CSS functions<br>
-                - Insider knowledge of CSS<br>
-                Example: “I helped a friend build an online magazine that published articles, photographs, music and all kinds of media. It wasn’t a hard project. In fact, it was pretty easy. I just loved watching how happy my simple CSS changes made him. Over a few hours, his website went from OK to excellent. It reminded me of why it’s important to know CSS, JavaScript and other common languages in today’s world. You can’t do anything without building a good website to show it off.”
-            </p>
-
-            <h3>What is your least favorite part of working with CSS?</h3>
-            <p>
-                All people have things that they don’t like about their jobs. An honest answer to this question can help you place an applicant with the right team. For instance, if a person loves finding errors in CSS files, you may want to hire that applicant to work on a project with creative people who prefer focusing on the big picture.<br>
-
-                What to look for in an answer:<br>
-
-                - Understanding the pros and cons of CSS<br>
-                - Knowing what role the applicant could play<br>
-                - Learning about the applicant's other interests<br>
-                Example: “CSS makes Web design a lot easier, but it still feels a little tedious. Ideally, I’d like to work with a dynamic language that lets users interact with websites. For the time being, though, I’m happy to hone my CSS skills and learn from more experienced people.”
-            </p>
-
-            <h3>What are some limitations of CSS? Do you know any?</h3>
-            <p>
-                There are several limitations of CSS such as:<br>
-
-                - CSS can’t fulfill turning completeness hence, it can never perform logical like ‘if/else’, for/while, etc, or arithmetical tasks<br>
-                - One cannot read files using CSS<br>
-                - It cannot provide total control over document display and allows the contents of the page to come through whatever the browser is used.<br>
-                - Ascending by selectors is not possible<br>
-                - Limitations of vertical control<br>
-                - No expressions as it is a text-based coding language<br>
-                - No column declaration<br>
-                - Pseudo-class not controlled by dynamic behavior<br>
-                - Rules, styles, targeting specific text not possible<br>
-            </p>
-
-            <h3>What are the different versions of CSS? Which one you use right now?</h3>
-            <p>
-                Different versions of CSS are:<br>
-
-                - CSS 1<br>
-                - CSS 2<br>
-                - CSS 2.1<br>
-                - CSS 3<br>
-                - CSS 4<br>
-            </p>
-
-            <!-- REFERANCE -->
-            <div id="ref-wrapper">
-                <h1 style="text-align: right; font-size: 20px"><a href="#title" style="text-decoration: none"> GO TO TOP </a></h1>
-                <h1 id="referance-title">Referances</h1>
-                <ul id="referance">
-                    <li><a href="http://learn.seytech.co/courses/htmlcss/prepation" target="_blank">seytech</a></li>
-                    <li><a href="https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#table-of-contents" target="_blank">yangshun</a></li>
-                    <li><a href="https://www.thatjsdude.com/interview/html.html#bdo" target="_blank">thatjsdude</a></li>
-                    <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">w3schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
-                    <li><a href="https://www.indeed.com/hire/interview-questions/css?aceid=&gclid=Cj0KCQjwgo_5BRDuARIsADDEntQ7QUfXU7ohlfsPK1eitgOQCcgm1W2Kl56VPY_dCwYtHWnifLPCkWMaAp4xEALw_wcB" target="_blank">Indeed</a></li>
-                </ul>
-            <div>
-
+      <h1 id="title">
+        <span style="color: #795548;">HTML </span> &&
+        <span style="color: #795548;">CSS</span> Interview Preparation
+        Questions<br />
+        <span id="note">Click on questions to unlock the answers</span>
+      </h1>
+
+      <div class="container">
+        <!-- COMMON Questions -->
+        <h4>Common Questions</h4>
+
+        <h3>What does a doctype do?</h3>
+        <p>
+          doctype is an instruction to the browser to inform about the version
+          of html document and how browser should render it.
+        </p>
+
+        <h3>What is Semantic HTML? Can you tell me HTML 5 elements?</h3>
+        <p>
+          Semantic HTML introduces meaning to the web page rather than just
+          presentation for example <code>strong</code> instead of
+          <code>b</code> <code>header, aside, nav</code> instead of
+          <code>div</code>
+        </p>
+
+        <h3>Do all HTML tags have an end tag?</h3>
+        <p>
+          No. There are some HTML tags that don't need a closing tag. For
+          example: <code>image</code> tag, <code> br </code> tag
+        </p>
+
+        <h3>What is the differences between div and span?</h3>
+        <p>
+          The difference is that <code>span</code> gives the output with
+          <code>display:inline</code> and <code>div</code> gives the output with
+          <code>display:block</code>. span is used when we need our elements to
+          be shown in a line, one after the other.
+        </p>
+
+        <h3>What is the use of the required attribute in HTML5?</h3>
+        <p>
+          It forces a user to fill text on the text field or text area before
+          submitting the form. It is used for form validation. Example:
+          <code> &lt;input type="text" name="name" required&gt; </code>
+        </p>
+
+        <h3>
+          Explain the three main ways to apply CSS styles to a web page. When
+          would you prefer which one?
+        </h3>
+        <p>
+          Inline CSS - You can apply CSS style inside the HTML tags(elements)
+          that’s called inline CSS.<br />
+          Internal Style Sheet - You can apply CSS styles Inside &lt;head&gt;
+          section in HTML using <code>&lt;style&gt;&lt;/style&gt;</code>.<br />
+          External Style Sheet - Create another file save it with .css extension
+          and then link this css file using <code>&lt;link&gt;</code>.<br />
+        </p>
+
+        <h3>What is the difference between classes and ID’s in CSS?</h3>
+        <p>
+          Classes are reusable CSS reference selectors named
+          <code>class=</code> in the HTML document and prefixed by a period in a
+          stylesheet. ID’s are declared as <code>id=</code> in HTML and
+          referenced by the # (hashtag.) ID’s are designed for unique
+          specificity since they can only ever be used by JavaScript once.
+          Though styles applied by ID through CSS do affect all instances of the
+          ID.
+        </p>
+
+        <h3>Could you describe the different kinds of selectors?</h3>
+        <p>
+          We can divide CSS selectors into five categories: <br />
+          <code>Simple selectors</code>(id, class, name etc.)<br />
+          <code>Combinator selectors</code>(descendant selector(space), child
+          selector(>), adjacent sibling selector (+), general sibling selector
+          (~) .)<br />
+          <code>Pseudo-class selectors</code>(visited, hover, link, active
+          etc.)<br />
+          <code>Pseudo-elements selectors</code> (first-line, first-letter
+          etc.)<br />
+          <code>Attribute selectors</code> (a[target] etc.)<br />
+        </p>
+
+        <h3>
+          What is the CSS display property and can you give a few examples of
+          its use?
+        </h3>
+        <p>
+          The display property specifies the display behavior (the type of
+          rendering box) of an element. <br />
+          <code>display: none;</code><br />
+          <code>display: inline;</code><br />
+          <code>display: block;</code><br />
+          <code>display: inline-block;</code> <br />
+          Read more and check examples
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#:~:text=Specificity%20is%20the%20means%20by,different%20sorts%20of%20CSS%20selectors."
+            target="_blank"
+          >
+            here.</a
+          >
+        </p>
+
+        <h3>What is CSS specificity?</h3>
+        <p>
+          Specificity is the means by which browsers decide which CSS property
+          values are the most relevant to an element and, therefore, will be
+          applied. Check
+          <a
+            href="https://www.w3schools.com/cssref/pr_class_display.asp"
+            target="_blank"
+          >
+            MDN</a
+          >
+          to learn how they used and calculated.
+        </p>
+
+        <h3>How can u highlight text in html?</h3>
+        <p>
+          By using <i>&lt;mark&gt; </i> element. Ex: Hey I am
+          <code>&lt;mark&gt;</code> marked <code>&lt;/mark&gt;</code> text!
+        </p>
+
+        <h3>When should you use section, div or article?</h3>
+        <p>
+          <code>section</code>, group of content inside is related to a single
+          theme, and should appear as an entry in an outline of the page. It’s a
+          chunk of related content, like a subsection of a long article, a major
+          part of the page (eg the news section on the homepage), or a page in a
+          webapp’s tabbed interface. A section normally has a heading (title)
+          and maybe a footer too.<br />
+
+          <code>article</code>, represents a complete, or self-contained,
+          composition in a document, page, application, or site and that is, in
+          principle, independently distributable or reusable, e.g. in
+          syndication. This could be a forum post, a magazine or newspaper
+          article, a blog entry, a user-submitted comment, an interactive widget
+          or gadget, or any other independent item of content.<br />
+
+          <code>div</code>, on the other hand, does not convey any meaning,
+          aside from any found in its class, lang and title attributes.
+        </p>
+
+        <h3>What does float do?</h3>
+        <p>
+          <code>float</code> pushes an element to the sides of a page with text
+          wrapped around it. you can create entire page or a smaller area by
+          using float. if size of a floated element changes, text around it will
+          re-flow to accommodate the changes. You can have float left, right,
+          none or inherit.<br />
+          if you set, <code>'float: left;'</code> for an image, it will move to
+          the left until the margin, padding or border of another block-level
+          element is reached. The normal flow will wrap around on the right
+          side.
+        </p>
+
+        <h3>
+          How can you fix, "floated points don't add up to the height of a
+          parent"? Basically how do you clear floats?
+        </h3>
+        <p>
+          You can use clear: both in an empty div
+          <code> &lt;div style="clear: both;"&gt; &lt;/div&gt; </code>, you can
+          use overflow hidden or scroll and you can float the parent as well.
+          Check
+          <a
+            href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear"
+            target="_blank"
+            >Examlpe here</a
+          >
+        </p>
+
+        <h3>How absolute, relative, fixed and static position differ?</h3>
+        <p>
+          <code>absolute</code>, place an element exactly where you want to
+          place it. absolute position is actually set relative to the element's
+          parent. if no parent available then relatively place to the page
+          itself.<br />
+
+          <code>relative</code>, is position an element relative to itself (from
+          where the element would be placed, if u don't apply relative
+          positioning). for example, if u set position relative to an element
+          and set top: 10px, it will move 10px down from where it would be
+          normally.<br />
+
+          <code>fixed</code>, element is positioned relative to viewport or the
+          browser window itself. viewport doesn't changed if u scroll and hence
+          fixed element will stay right in the same position.<br />
+
+          <code>static</code>, element will be positioned based on the normal
+          flow of the document. usually, u will use position static to remove
+          other position might be applied to an element.<br />
+
+          Check
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            target="_blank"
+          >
+            MDN Docs for examples
+          </a>
+        </p>
+
+        <h3>
+          What are the differences between visibility hidden and display none?
+        </h3>
+        <p>
+          <code>display:</code> none removes the element from the normal layout
+          flow and allow other elements to fill in. <br />
+          <code>visibility:</code> hidden tag is rendered, it takes space in the
+          normal flow but doesn't show it<br />
+
+          Check
+          <a
+            href="https://www.w3schools.com/css/css_display_visibility.asp"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>
+          What does <code>* { box-sizing: border-box; }</code> do? What are its
+          advantages?
+        </h3>
+        <p>
+          By default, elements have box-sizing: content-box applied, and only
+          the content size is being accounted for.<br />
+          <code>box-sizing:</code> border-box changes how the width and height
+          of elements are being calculated, border and padding are also being
+          included in the calculation.<br />
+          The <code>height</code> of an element is now calculated by the
+          content's height + vertical padding + vertical border width.<br />
+          The <code>width</code> of an element is now calculated by the
+          content's width + horizontal padding + horizontal border width. Taking
+          into account paddings and borders as part of our box model resonates
+          better with how designers actually imagine content in grids.<br />
+          Check examples at
+          <a
+            href="https://www.w3schools.com/css/css3_box-sizing.asp"
+            target="_blank"
+            >W3schools</a
+          >
+        </p>
+
+        <h3>
+          What are the differences between inline, block and inline-block?
+        </h3>
+        <p>
+          <code>inline</code>, elements do not break the flow. think of span it
+          fits in the line. Important points about inline elements, margin/
+          padding will push other elements horizontally not vertically.
+          Moreover, inline elements ignores height and width.<br />
+
+          <code>block</code>, breaks the flow and dont sits inline. they are
+          usually container like div, section, ul and also text p, h1, etc.<br />
+
+          <code>inline-block</code>, will be similar to inline and will go with
+          the flow of the page. Only differences is this this will take height
+          and width.<br />
+
+          Check
+          <a
+            href="https://www.w3schools.com/css/css_inline-block.asp"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>What is Box Model? What are the properties related to it?</h3>
+        <p>
+          Technically, height, width, padding and border are part of box model
+          and margin is related to it.<br />
+
+          <i>Extra:</i> Everything in a web page is a box where you can control
+          size, position, background, etc. Each box/ content area is optionally
+          surrounded by padding, border and margin. When you set height and
+          width of an element, you set content height and width.<br />
+
+          Check
+          <a
+            href="https://www.w3schools.com/css/css_boxmodel.asp"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>How <code>overflow</code> attribute works in CSS ?</h3>
+        <p>
+          The CSS overflow property controls what happens to content that is too
+          big to fit into an area.<br />
+
+          Check
+          <a
+            href="https://www.w3schools.com/css/tryit.asp?filename=trycss_overflow_intro"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>How do you align a p center-center inside a div?</h3>
+        <p>
+          <code>text-align: center</code> will do the horizontal alignment but
+          <code>vertical-align: middle</code> will not work here. there are
+          couple of different ways to solve this problem and one of them are
+          positioning. You make the parent as relative position and child as
+          absolute positioning. And then define all position parameter as sero
+          and width 50% and height 30%.<br />
+
+          Check
+          <a
+            href="http://vanseodesign.com/css/vertical-centering/"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>Describe z-index and how stacking context is formed?</h3>
+        <p>
+          The z-index property in CSS controls the vertical stacking order of
+          elements that overlap. z-index only affects elements that have a
+          position value which is not static.<br />
+
+          Without any z-index value, elements stack in the order that they
+          appear in the DOM (the lowest one down at the same hierarchy level
+          appears on top). Elements with non-static positioning (and their
+          children) will always appear on top of elements with default static
+          positioning, regardless of HTML hierarchy.<br />
+
+          A stacking context is an element that contains a set of layers. Within
+          a local stacking context, the z-index values of its children are set
+          relative to that element rather than to the document root. Layers
+          outside of that context — i.e. sibling elements of a local stacking
+          context — can't sit between layers within it. If an element B sits on
+          top of element A, a child element of element A, element C, can never
+          be higher than element B even if element C has a higher z-index than
+          element B.<br />
+
+          Each stacking context is self-contained - after the element's contents
+          are stacked, the whole element is considered in the stacking order of
+          the parent stacking context. A handful of CSS properties trigger a new
+          stacking context, such as opacity less than 1, filter that is not
+          none, and transform that is notnone.<br />
+
+          Check
+          <a
+            href="https://css-tricks.com/almanac/properties/z/z-index/"
+            target="_blank"
+          >
+            here for examples
+          </a>
+        </p>
+
+        <h3>Should you use !important?</h3>
+        <p>
+          When you’re wrestling with specificity, trying to override that one
+          style, you may be tempted to add !important to your style. Think very
+          carefully before you do so! It may seem harmless, but if you do this
+          all over the place, you will soon find yourself in a big mess that you
+          cannot get out of.<br />
+
+          What !important does, is make that particular style have the highest
+          specificity possible. Nothing else can override it, apart from another
+          !important. You might be able to see where this is going, but once you
+          start using them, you’ll almost certainly get into a position where
+          you need to override a rule marked as !important, which forces you to
+          use another one. And so the cycle continues.<br />
+          <code>
+            /* high specificity */<br />
+            .large .navigation.navigation-large { <br />
+            font-size: 2em;<br />
+            }<br />
+
+            /* will override the above, but it's dangerous! */<br />
+            .navigation {<br />
+            font-size: 3em !important;<br />
+            }
+          </code>
+        </p>
+
+        <h3>
+          What is the difference between <code>px</code>, <code>em</code> and
+          <code>rem</code> sizing fonts?
+        </h3>
+        <p>
+          <code>TL;DR:</code>
+
+          <code>Pixels</code> are ignorant, don’t use them. Use
+          <code>REMs</code> for sizes and spacing. Use <code>EMs</code> for
+          media queries.<br />
+
+          Read more
+          <a
+            href="https://engageinteractive.co.uk/blog/em-vs-rem-vs-px"
+            target="_blank"
+          >
+            here
+          </a>
+        </p>
+
+        <h3>
+          What's the difference between the <code>nth-of-type()</code> and
+          <code>nth-child()</code> selectors?
+        </h3>
+
+        <p>
+          <code>TL;DR:</code><br />
+
+          <code>:nth-child</code> selector, in “Plain English,” means select an
+          element if:<br />
+
+          It is a paragraph element<br />
+          It is the second child of a parent<br />
+          <code>:nth-of-type</code> selector, in “Plain English,” means:<br />
+
+          Select the second paragraph child of a parent<br />
+
+          Read more
+          <a
+            href="https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/"
+            target="_blank"
+          >
+            here
+          </a>
+        </p>
+
+        <h3>Explain the term Responsive web design ?</h3>
+        <p>
+          It is a method in which we design and develop a web page according to
+          the user activities and conditions which are based on various
+          components like the size of the screen, portability of the web page on
+          the different devices, etc. It is done by using different flexible
+          layouts and grids.
+        </p>
+
+        <h3>How do we make a rounded corner by using CSS?</h3>
+        <p>
+          We can make a rounded corner by using the property
+          <code>border-radius</code>. We can apply this property to any element.
+        </p>
+
+        <h3>What is CSS flexbox?</h3>
+        <p>
+          It allows you to design a flexible responsive layout structure without
+          using any float or positioning property of CSS. To use CSS flexbox you
+          need to define a flex container initially.
+        </p>
+
+        <h3>Write all the properties of the flexbox?</h3>
+        <p>
+          There are several properties of the flexbox that are used in the HTML
+          webpage.<br />
+
+          They are:<br />
+
+          flex-direction<br />
+          flex-wrap<br />
+          flex-flow<br />
+          justify-content<br />
+          align-items<br />
+          align-content<br />
+        </p>
+
+        <h3>How can we add icons to the web page?</h3>
+        <p>
+          We can add icons to the HTML webpage by using an icon library like
+          font-awesome.<br />
+
+          We have to add the name of the given icon class to any inline HTML
+          element. ( &lt;i&gt; or &lt;span&gt;) . Icons in the icon libraries
+          are scalable vectors that can be customized with CSS.
+        </p>
+
+        <h3>What are the differences between relative and absolute in CSS?</h3>
+        <p>
+          The main difference between relative and absolute is that “relative”
+          is used for the same tag in CSS and it means that if we write the
+          left:10px then the padding will shift to 10px in the left while
+          absolute is totally relative to the non-static parent.<br />
+
+          It means, if we write left:10px then the result will be 10px far from
+          the left edge of the parent element.
+        </p>
+
+        <h3>Differentiate between inline and block element?</h3>
+        <p>
+          Inline element does not have an element to set width and height and
+          also it does not have the line break. Ex:
+          <code>em, strong</code> etc.<br />
+          Block element specification:<br />
+
+          They do have the line break.<br />
+          They define the width by setting a container and also allow setting
+          height.<br />
+          It can also contain an element that occurs in the inline element.<br />
+        </p>
+
+        <h3>What are empty elements?</h3>
+        <p>
+          HTML elements with no content are called empty elements. For example:
+          &lt;br&gt;, &lt;hr&gt; etc.
+        </p>
+
+        <h3>
+          What are the different ways to visually hide content (and make it
+          available only for screen readers)?
+        </h3>
+        <p>
+          These techniques are related to accessibility (a11y). <br />
+          - <code>width: 0; height: 0.</code> Make the element not take up any
+          space on the screen at all, resulting in not showing it.<br />
+          - <code>position: absolute; left: -99999px.</code> Position it outside
+          of the screen.<br />
+          - <code>text-indent: -9999px.</code> This only works on text within
+          the block elements.<br />
+          - Meta tags. For example by using Schema.org, RDF, and JSON-LD.<br />
+          - WAI-ARIA. (HTML5 doesn't suggest this though Check
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+            target="_blanket"
+            >MDN docs</a
+          >) A W3C technical specification that specifies how to increase the
+          accessibility of web pages.<br />
+          Even if WAI-ARIA is the ideal solution, I would go with the absolute
+          positioning approach, as it has the least caveats, works for most
+          elements and it's an easy technique.
+        </p>
+
+        <h3>What are the different new form element types in HTML 5?</h3>
+        <p>
+          Following is a list of 10 frequently used new elements in HTML 5:<br />
+
+          - Color<br />
+          - Date<br />
+          - Datetime-local<br />
+          - Email<br />
+          - Time<br />
+          - Url<br />
+          - Range<br />
+          - Telephone<br />
+          - Number<br />
+          - Search<br />
+          Check
+          <a
+            href="https://www.w3schools.com/html/html_forms.asp"
+            target="_blank"
+          >
+            examples here
+          </a>
+        </p>
+
+        <!-- ADVANCED Questions -->
+        <h4>Advanced Questions</h4>
+        <h3>
+          What's the difference between "resetting" and "normalizing" CSS? Which
+          would you choose, and why?
+        </h3>
+        <p>
+          <i>Resetting</i> - Resetting is meant to strip all default browser
+          styling on elements. For e.g. margins, paddings, font-sizes of all
+          elements are reset to be the same. You will have to redeclare styling
+          for common typographic elements. <br />
+          <i>Normalizing</i> - Normalizing preserves useful default styles
+          rather than "unstyling" everything. It also corrects bugs for common
+          browser dependencies.<br />
+          I would choose resetting when I have a very customized or
+          unconventional site design such that I need to do a lot of my own
+          styling and do not need any default styling to be preserved.
+        </p>
+
+        <h3>
+          What are the various clearing techniques and which is appropriate for
+          what context?
+        </h3>
+        <p>
+          Empty div method -
+          <code>&lt;div style="clear:both;"&gt; &lt;/div&gt;</code><br />
+          Clearfix method - Refer to the <code>.clearfix</code> class above.
+          <br />
+          overflow: <code>auto or overflow: hidden</code> method - Parent will
+          establish a new block formatting context and expand to contains its
+          floated children.<br />
+          In large projects, I would write a utility .clearfix class and use
+          them in places where I need it. overflow: hidden might clip children
+          if the children is taller than the parent and is not very ideal.
+        </p>
+
+        <h3>
+          Explain CSS sprites, and how you would implement them on a page or
+          site?
+        </h3>
+        <p>
+          CSS sprites combine multiple images into one single larger image. It
+          is a commonly-used technique for icons (Gmail uses it). How to
+          implement it:<br />
+
+          1. Use a sprite generator that packs multiple images into one and
+          generate the appropriate CSS for it.<br />
+          2. Each image would have a corresponding CSS class with
+          background-image, background-position and background-size properties
+          defined.<br />
+          3. To use that image, add the corresponding class to your element.<br />
+
+          Advantages: <br />
+
+          - Reduce the number of HTTP requests for multiple images (only one
+          single request is required per spritesheet). But with HTTP2, loading
+          multiple images is no longer much of an issue.<br />
+          - Advance downloading of assets that won't be downloaded until needed,
+          such as images that only appear upon :hover pseudo-states. Blinking
+          wouldn't be seen.<br />
+        </p>
+
+        <h3>
+          How would you approach fixing browser-specific styling issues?
+        </h3>
+        <p>
+          - After identifying the issue and the offending browser, use a
+          separate style sheet that only loads when that specific browser is
+          being used. - This technique requires server-side rendering though.<br />
+          - Use libraries like Bootstrap that already handles these styling
+          issues for you.<br />
+          - Use autoprefixer to automatically add vendor prefixes to your
+          code.<br />
+          Use Reset CSS or Normalize.css.<br />
+          - If you're using Postcss (or a similar transpiling library), there
+          may be plugins which allow you to opt in for using modern CSS syntax
+          (and even W3C proposals) that will transform those sections of your
+          code into corresponding safe code that will work in the targets you've
+          used.<br />
+        </p>
+
+        <h3>
+          Have you ever used a grid system, and if so, what do you prefer?
+        </h3>
+        <p>
+          Before Flex became popular (around 2014), the float-based grid system
+          was the most reliable because it still has the most browser support
+          among the alternative existing systems (flex, grid). Bootstrap was
+          using the float approach until Bootstrap 4 which switched to the
+          flex-based approach. As of writing (2020), flex is the recommended
+          approach for building grid systems and has
+          <a href="https://caniuse.com/#search=flex" target="_blank"
+            >decent browser support.</a
+          ><br />
+          For the adventurous, they can look into
+          <a
+            href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+            target="_blank"
+            >CSS Grid Layout.</a
+          >, which uses the shiny new grid property; it is even better than flex
+          for building grid layouts and will be the de facto way to do so in the
+          future.
+        </p>
+
+        <h3>
+          Can you give an example of an @media property other than screen?
+        </h3>
+        <p>
+          Yes, there are four types of @media properties (including screen):
+          <br />
+          <code>all</code> - for all media type devices<br />
+          <code>print</code> - for printers<br />
+          <code>speech</code> - for screenreaders that "reads" the page out
+          loud<br />
+          <code>screen</code> - for computer screens, tablets, smart-phones
+          etc.<br />
+          Here is an example of print media type's usage:<br />
+          <code>
+            @media print { <br />body<br />
+            { color: black; } <br />}
+          </code>
+        </p>
+
+        <h3>
+          What are the advantages/disadvantages of using CSS preprocessors?
+        </h3>
+        <p>
+          <i>Advantages:</i><br />
+          - CSS is made more maintainable.<br />
+          - Easy to write nested selectors. <br />
+          - Variables for consistent theming. Can share theme files across
+          different projects.<br />
+          - Mixins to generate repeated CSS.<br />
+          - Sass features like loops, lists, and maps can make configuration
+          easier and less verbose.<br />
+          - Splitting your code into multiple files. CSS files can be split up
+          too but doing so will require an HTTP request to download each CSS
+          file.<br />
+          <i>Disadvantages:</i><br />
+          - Requires tools for preprocessing. Re-compilation time can be
+          slow.<br />
+          - Not writing currently and potentially usable CSS. For example, by
+          using something like postcss-loader with webpack, you can write
+          potentially future-compatible CSS, allowing you to use things like CSS
+          variables instead of Sass variables. Thus, you're learning new skills
+          that could pay off if/when they become standardized.
+        </p>
+
+        <h3>
+          What existing CSS frameworks have you used locally, or in production?
+          How would you change/improve them?
+        </h3>
+        <p>
+          <code>Bootstrap</code> - Slow release cycle. Bootstrap 4 has been in
+          alpha for almost 2 years. Add a spinner button component, as it is
+          widely used.<br />
+          <code>Semantic UI</code> - Source code structure makes theme
+          customization extremely hard to understand. Its unconventional theming
+          system is a pain to customize. Hardcoded config path within the vendor
+          library. Not well-designed for overriding variables unlike in
+          Bootstrap.<br />
+          <code>Bulma</code>
+          - A lot of non-semantic and superfluous classes and markup required.
+          Not backward compatible. Upgrading versions breaks the app in subtle
+          manners.
+        </p>
+
+        <h3>
+          Can you explain the difference between coding a website to be
+          responsive versus using a mobile-first strategy?
+        </h3>
+        <p>
+          Note that these two 2 approaches are not exclusive.<br />
+
+          Making a website responsive means the some elements will respond by
+          adapting its size or other functionality according to the device's
+          screen size, typically the viewport width, through CSS media queries,
+          for example, making the font size smaller on smaller devices.<br />
+
+          <code>
+            @media (min-width: 601px) {<br />
+            .my-class {<br />
+            font-size: 24px;<br />
+            }<br />
+            }<br />
+          </code>
+          <code>
+            @media (max-width: 600px) {<br />
+            .my-class {<br />
+            font-size: 12px;<br />
+            }<br />
+            }<br />
+          </code>
+
+          A mobile-first strategy is also responsive, however it agrees we
+          should default and define all the styles for mobile devices, and only
+          add specific responsive rules to other devices later. Following the
+          previous example:<br />
+
+          <code>
+            .my-class {<br />
+            font-size: 12px;<br />
+            }<br />
+          </code>
+          <code>
+            @media (min-width: 600px) {<br />
+            .my-class {<br />
+            font-size: 24px;<br />
+            }<br />
+            }<br />
+          </code>
+
+          A mobile-first strategy has 2 main advantages:<br />
+
+          It's more performant on mobile devices, since all the rules applied
+          for them don't have to be validated against any media queries.<br />
+          It forces to write cleaner code in respect to responsive CSS rules.<br />
+        </p>
+
+        <h3>
+          Is there any reason you'd want to use translate() instead of absolute
+          positioning, or vice-versa? And why?
+        </h3>
+        <p>
+          <code>translate()</code> is a value of CSS transform. Changing
+          transform or opacity does not trigger browser reflow or repaint but
+          does trigger compositions; whereas changing the absolute positioning
+          triggers reflow. transform causes the browser to create a GPU layer
+          for the element but changing absolute positioning properties uses the
+          CPU. Hence translate() is more efficient and will result in shorter
+          paint times for smoother animations.<br />
+          When using <code>translate()</code>, the element still occupies its
+          original space (sort of like position: relative), unlike in changing
+          the absolute positioning. Read more
+          <a
+            href="https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/"
+            target="_blank"
+            >here</a
+          >
+        </p>
+
+        <h3>
+          What UI, Security, Performance, SEO, Maintainability or Technology
+          considerations do you make while building a web application or site?
+        </h3>
+        <p>
+          <i>UI:</i> Depending on your audience, accessibility can be your
+          biggest challenge and resources such as http://a11yproject.com are
+          great in suggesting patterns to achieve whats needed. Beyond that, a
+          pleasant palette and intuitive interfaces are the foundation, which
+          arise from well developed style guides containing code snippets that
+          help developers quickly deliver features with pre-themed UI elements
+          that alleviate common pain points such as non-conforming elements that
+          may distract stake holders during the iteration and approval
+          process.<br />
+          <i>Security:</i>
+          - Login pages should be encrypted<br />
+          - Data validation should be done server-side<br />
+          - Manage your Web site via encrypted connections<br />
+          <i>Performance:</i> Concatenation and minification of JS and CSS
+          files, delivering SVG images wherever possible, icon fonts, use
+          sprites as necessary and compressing images.<br />
+          <i>SEO:</i> When it comes to SEO, I refer to my approach as “the new
+          old school.” That is, I don’t believe there is any “magic in your
+          meta” tags and I encourage business owners to simply create content
+          that is relevant to your business, write clearly and often, advertise
+          when necessary, make sure your site is mobile friendly, that sharing
+          your content is easy, and you have control of your Google, Twitter,
+          Facebook, Yahoo, Bing, Foursquare, Pinterest, Instagram (insert hot
+          new here…) accounts, and everything really does fall into place. As
+          your business grows, more visitors come, more people share and the
+          search engines notice.<br />
+          <i>Maintainability and Technology Considerations:</i> Use tooling that
+          is more flexible and adhere’s to a standard. A great example of this
+          is PostCSS, where the concept is, you write plain old CSS – and NEW
+          CSS as well, including syntax not yet implemented in browsers and let
+          a plugin process your css and manipulate the output so it’s browser
+          ready. Then as time passes, W3C syntax is agreed upon, pre-fix use
+          subsides, and you can re-process your CSS with less and less
+          manipulation.
+        </p>
+
+        <h3>
+          How would you optimize a website’s assets/resources?
+        </h3>
+        <p>
+          Concatenate and compress CSS, JavaScript and HTML files wherever
+          possible, configure your server to deliver a Gzip files, cache
+          resources, set longer expirations dates on http headers of resources
+          you don’t expect to change often – such as a logo. Images can be some
+          of the heaviest files we deliver, so compress wisely. Soon the
+          <code>picture</code> element will be implemented across browsers, so
+          we can optimize the delivery of image content. Also in the near future
+          consider using <code>WebP</code> format for images – it is quite
+          smaller in size than JPEG and PNG files. Finally, use a CDN or other
+          domains to host your resources and leverage domain sharding.
+        </p>
+
+        <h3>
+          Explain what ARIA and screen readers are, and how to make a website
+          accessible.
+        </h3>
+        <p>
+          Screen readers are software programs that provide assistive
+          technologies that allow people with disabilities (such as no sight,
+          sound or mouse-ing ability) to use web applications. You can make your
+          sites more accessible by following ARIA standards such as semantic
+          HTML, alt attributes and using <code>[role=button]</code> in the
+          expected ways.<br />
+          Ref:
+          <a href="https://w3c.github.io/using-aria/" target="_blank"
+            >Using ARIA</a
+          >
+        </p>
+
+        <h3>
+          Explain some of the pros and cons for CSS animations versus JavaScript
+          animations.
+        </h3>
+        <p>
+          Regarding optimization and responsiveness the debate bounces back and
+          forth but, the concept is:<br />
+          - CSS animations allows the browser to choose where the animation
+          processing is done, CPU or the GPU. (Central or Graphics Processing
+          Unit)<br />
+          - That said, adding many layers to a document will eventually have a
+          performance hit.<br />
+          - JS animation means more code for the user to download and for the
+          developer to maintain.<br />
+          - Applying multiple animation types on an element is harder with CSS
+          since all transforming power is in one property transform<br />
+          - CSS animations being declarative are not programmable therefore
+          limited in capability.
+        </p>
+
+        <h3>
+          What does CORS stand for and what issue does it address?
+        </h3>
+        <p>
+          Cross Origin Resource Sharing. To address the fact that browsers
+          restrict cross-origin HTTP requests initiated from within scripts.
+          CORS gives web servers cross-domain access controls, which enable
+          secure cross-domain data transfers.
+        </p>
+
+        <h3>
+          Describe the difference between a: <code>cookie</code>
+          <code>sessionStorage</code> <code>localStorage</code>
+        </h3>
+        <p>
+          <i>cookie</i>: A text file saved on the users computer to store and
+          retrieve data<br />
+          <i>sessionStorage:</i> Is memory space in a browser to save temporary
+          data until the window or tab is closed.<br />
+          <i>localStorage:</i> Like cookie, where data can be saved and
+          retrieved after browser sessions, but stored in memory like
+          sessionStorage. Data is stored as plain key value pairs and can be
+          stored as Json objects. Check example
+          <a href="https://codepen.io/peterdillon/pen/vLYpjY/" target="_blank"
+            >Codepen</a
+          >
+        </p>
+
+        <h3>
+          Describe the difference between: <code>script</code>,
+          <code>script async</code>, <code>script defer</code>
+        </h3>
+        <p>
+          <i>Normal Execution: script:</i><br />
+          Parsing of the HTML code pauses while the script is executing. For
+          slow servers and heavy scripts this means that displaying the webpage
+          will be delayed.<br />
+          <i>Deferred Execution: script defer</i><br />
+          Delays script execution until the HTML parser has finished. A positive
+          effect of this attribute is that the DOM will be available for your
+          script. However, since not every browser supports defer yet, can’t
+          rely on it.<br />
+
+          <i>Asynchronous Execution: script async</i><br />
+          HTML parsing may continue and the script will be executed as soon as
+          it’s ready.<br />
+        </p>
+
+        <h3>
+          Why is it generally a good idea to position CSS ‘link’ references
+          between ‘head’ and JS ‘script’ just before closing body? Do you know
+          any exceptions?
+        </h3>
+        <p>
+          CSS goes in the head to calculate the styles and layout before DOM
+          elements load to prevent flashes of un-styled content. Loading JS just
+          before the body close means the DOM will be available for it.<br />
+          However, modern browsers have implemented ‘speculative parsing’ –
+          where the browser ‘looks ahead’ in the HTML and begins downloading
+          resources before scripts download and execute. (<a
+            href="https://stackoverflow.com/questions/9271276/should-css-always-preceed-javascript"
+            target="_blank"
+            >reference</a
+          >)
+        </p>
+
+        <h5>
+          More Coming soon! For now check out references below!
+        </h5>
+
+        <!-- BEHAVIROAL Questions -->
+        <h4>Behavioral Questions</h4>
+
+        <h3>
+          Talk about your preferred development environment.
+        </h3>
+        <p>
+          <i>Note: </i>To this questions you can answer by your personal
+          setup<br />
+          Typically I use Sublime Text with a local server. As I state in my
+          work history I have been involved in a vast variety of dev teams, each
+          with it’s own flavor. Most recently I worked at Aspect Software, a
+          Microsoft shop, where I embraced IIS, Visual Studio, Team Foundation
+          Server, Office 365, One Drive, Share Point and more. As an aside, upon
+          employment I was issued a Windows Phone and found the interface very
+          exciting despite the lack of applications built for it.
+        </p>
+
+        <h3>
+          Which version control systems are you familiar with?
+        </h3>
+        <p>
+          <i>Note: </i>To this questions you can answer by your personal
+          setup<br />
+          Git, Bitbucket, SVN, TFS.
+        </p>
+
+        <h3>
+          Can you describe your workflow when you create a web page?
+        </h3>
+        <p>
+          <i>Note: </i>To this questions you can answer by your personal
+          setup<br />
+          In General follow this guideance:
+          <a href="http://peterdoes.it/resume.html" target="_blank"
+            >Peter Dillon</a
+          >
+        </p>
+
+        <h3>
+          If you have 5 different stylesheets, how would you best integrate them
+          into the site?
+        </h3>
+        <p>
+          1. Break them up onto to different CDN servers to leverage domain
+          sharding.<br />
+          2. Employ the “new old” technique of adding “above the fold” css
+          inline in the head of your document – reducing http requests and
+          improve perceived performance.<br />
+          3. Using SASS I would break up my files into related chunks – all of
+          which are concatenated and compressed using compass, sass with gulp or
+          grunt in your build process.<br />
+        </p>
+
+        <h3>
+          If you jumped on a project and they used tabs and you used spaces,
+          what would you do?
+        </h3>
+        <p>
+          Get used to it and adjust. Adjusting and adapting are some of my
+          greatest strengths.
+        </p>
+
+        <h3>When did you start experimenting with CSS?</h3>
+        <p>
+          The answer to this question gives you an idea of how much experience
+          the job applicant has working with CSS. It can also tell you whether
+          the person picked up the skill as a hobby or learned it in an academic
+          or professional environment.<br />
+
+          What to look for in an answer:<br />
+
+          - Amount of experience with CSS<br />
+          - Interest in building websites<br />
+          - Excitement about new technology<br />
+          Example: “I started using style sheets in high school. A few friends
+          and I had been building a website about our favorite television shows.
+          Eventually, the pages became a mess because they didn’t share a common
+          aesthetic. The fonts and colors were different on every page. I
+          learned how to use CSS so I could bring the pages into harmony without
+          writing new HTML tags for each page.”
+        </p>
+
+        <h3>What is your favorite CSS feature?</h3>
+        <p>
+          It probably doesn’t matter what CSS feature your job applicant likes
+          most. Finding out whether the person can speak freely about style
+          sheets, however, shows that your applicant has a strong knowledge of
+          CSS.<br />
+
+          What to look for in an answer:<br />
+
+          - Experience with CSS<br />
+          - Understanding of CSS<br />
+          - How to use CSS to save time<br />
+          Example: “I started using style sheets in high school. A few friends
+          and I had been building a website about our favorite television shows.
+          Eventually, the pages became a mess because they didn’t share a common
+          aesthetic. The fonts and colors were different on every page. I
+          learned how to use CSS so I could bring the pages into harmony without
+          writing new HTML tags for each page.”
+        </p>
+
+        <h3>
+          Do you use CSS in combination with other markup or programming
+          languages?
+        </h3>
+        <p>
+          Web developers often rely on a few languages to build dynamic sites.
+          The answer to this question shows that the applicant knows about other
+          languages used to build sites. By prompting the person to name the
+          languages, you make sure that the applicant has a deep understanding
+          of the subject.<br />
+
+          What to look for in an answer:<br />
+
+          - Interest in front-end design<br />
+          - Other language skills<br />
+          - Creative problem solving<br />
+          Example: “I started using style sheets in high school. A few friends
+          and I had been building a website about our favorite television shows.
+          Eventually, the pages became a mess because they didn’t share a common
+          aesthetic. The fonts and colors were different on every page. I
+          learned how to use CSS so I could bring the pages into harmony without
+          writing new HTML tags for each page.”
+        </p>
+
+        <h3>
+          Can you tell me about a project that forced you to learn something new
+          about CSS?
+        </h3>
+        <p>
+          Asking this question encourages people to reflect on their experiences
+          with CSS. The answer may reveal several things, such as how much
+          experience applicants have with CSS and how they use critical thinking
+          to solve difficult problems.<br />
+
+          What to look for in an answer:<br />
+
+          - Understanding of CSS<br />
+          - Amount of experience with CSS<br />
+          - Critical thinking<br />
+          Example: “I took a multidisciplinary class in college that created
+          groups of librarians and engineers to work on unique projects. My
+          group decided to digitize a large collection of handwritten poems in
+          the library’s permanent collection. Making a style sheet that could
+          accommodate the different sizes, shapes and qualities of the poems
+          took a lot of effort.”
+        </p>
+
+        <h3>What’s your favorite project that required CSS?</h3>
+        <p>
+          This question gives you some insight into what the interviewee enjoys.
+          The answer says more about the applicant’s personality than
+          programming skills.<br />
+
+          What to look for in an answer:<br />
+
+          - Understanding of CSS's benefits<br />
+          - Creative problem solving<br />
+          - How applicant responds to challenges<br />
+          Example: “I helped a friend build an online magazine that published
+          articles, photographs, music and all kinds of media. It wasn’t a hard
+          project. In fact, it was pretty easy. I just loved watching how happy
+          my simple CSS changes made him. Over a few hours, his website went
+          from OK to excellent. It reminded me of why it’s important to know
+          CSS, JavaScript and other common languages in today’s world. You can’t
+          do anything without building a good website to show it off.”
+        </p>
+
+        <h3>
+          Do you have a resource that you use when you can’t remember a CSS
+          function?
+        </h3>
+        <p>
+          Programmers can’t keep everything in their heads, so they rely on
+          references when they remember specific functions and terms. The answer
+          to this question shows that the applicant knows about reliable CSS
+          resources that may come in handy when working on future projects.<br />
+
+          What to look for in an answer:<br />
+
+          - Deep understanding of CSS resources<br />
+          - Where to find CSS functions<br />
+          - Insider knowledge of CSS<br />
+          Example: “I helped a friend build an online magazine that published
+          articles, photographs, music and all kinds of media. It wasn’t a hard
+          project. In fact, it was pretty easy. I just loved watching how happy
+          my simple CSS changes made him. Over a few hours, his website went
+          from OK to excellent. It reminded me of why it’s important to know
+          CSS, JavaScript and other common languages in today’s world. You can’t
+          do anything without building a good website to show it off.”
+        </p>
+
+        <h3>What is your least favorite part of working with CSS?</h3>
+        <p>
+          All people have things that they don’t like about their jobs. An
+          honest answer to this question can help you place an applicant with
+          the right team. For instance, if a person loves finding errors in CSS
+          files, you may want to hire that applicant to work on a project with
+          creative people who prefer focusing on the big picture.<br />
+
+          What to look for in an answer:<br />
+
+          - Understanding the pros and cons of CSS<br />
+          - Knowing what role the applicant could play<br />
+          - Learning about the applicant's other interests<br />
+          Example: “CSS makes Web design a lot easier, but it still feels a
+          little tedious. Ideally, I’d like to work with a dynamic language that
+          lets users interact with websites. For the time being, though, I’m
+          happy to hone my CSS skills and learn from more experienced people.”
+        </p>
+
+        <h3>What are some limitations of CSS? Do you know any?</h3>
+        <p>
+          There are several limitations of CSS such as:<br />
+
+          - CSS can’t fulfill turning completeness hence, it can never perform
+          logical like ‘if/else’, for/while, etc, or arithmetical tasks<br />
+          - One cannot read files using CSS<br />
+          - It cannot provide total control over document display and allows the
+          contents of the page to come through whatever the browser is used.<br />
+          - Ascending by selectors is not possible<br />
+          - Limitations of vertical control<br />
+          - No expressions as it is a text-based coding language<br />
+          - No column declaration<br />
+          - Pseudo-class not controlled by dynamic behavior<br />
+          - Rules, styles, targeting specific text not possible<br />
+        </p>
+
+        <h3>
+          What are the different versions of CSS? Which one you use right now?
+        </h3>
+        <p>
+          Different versions of CSS are:<br />
+
+          - CSS 1<br />
+          - CSS 2<br />
+          - CSS 2.1<br />
+          - CSS 3<br />
+          - CSS 4<br />
+        </p>
+
+        <!-- RAPID Questions -->
+        <h4>Quickly Answered Questions</h4>
+
+        <h3>Does css properties are case sensitive?</h3>
+        <p>No</p>
+
+        <h3>Why css selectors mixed up with cases don't apply the styles?</h3>
+        <p>Because, html ID and classes are case sensitive.</p>
+
+        <h3>Does margin-top or margin-bottom has effect on inline element?</h3>
+        <p>No</p>
+
+        <h3>
+          Does padding-top or padding-bottom has effect on inline element?
+        </h3>
+        <p>No</p>
+
+        <h3>
+          Does padding-left or padding-right or margin-left or margin-right has
+          effect on inline element?
+        </h3>
+        <p>Yes</p>
+
+        <h3>
+          If you have a &lt;p&gt; element with font-size: 10rem, will the text
+          be responsive when the user resizes / drags the browser window?
+        </h3>
+        <p>No</p>
+
+        <h3>
+          The pseudo class :checked will select inputs with type radio or
+          checkbox, but not &lt;option&gt; elements.
+        </h3>
+        <p>False</p>
+
+        <h3>
+          In a HTML document, the pseudo <code>class :root</code> always refers
+          to the &lt;html&gt; element.
+        </h3>
+        <p>True</p>
+
+        <h3>
+          The translate() function can move the position of an element on the
+          z-axis.
+        </h3>
+        <p>False</p>
+
+        <h3>
+          How do you serve a page with content in multiple languages?
+        </h3>
+        <p>
+          Programmatically reset the:<br />
+          &lt;html lang="en"&gt; <br />
+
+          &lt;html lang="en"&gt; <br />
+          You can even set the language on specific content blocks
+          individually:<br />
+          &lt;blockquote lang="fr"&gt;
+        </p>
+
+        <h3>
+          What are data- attributes good for?
+        </h3>
+        <p>
+          For creating custom attributes that you can use to find elements or
+          DOM nodes you want to manipulate. JavaScript frameworks use this
+          feature a lot.
+        </p>
+
+        <!-- REFERANCE -->
+        <div id="ref-wrapper">
+          <h1 style="text-align: right; font-size: 20px;">
+            <a href="#title" style="text-decoration: none;"> GO TO TOP </a>
+          </h1>
+          <h1 id="referance-title">Referances</h1>
+          <ul id="referance">
+            <li>
+              <a
+                href="http://learn.seytech.co/courses/htmlcss/prepation"
+                target="_blank"
+                >seytech</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#table-of-contents"
+                target="_blank"
+                >yangshun</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.thatjsdude.com/interview/html.html#bdo"
+                target="_blank"
+                >thatjsdude</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                >w3schools</a
+              >
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/" target="_blank"
+                >MDN</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.indeed.com/hire/interview-questions/css?aceid=&gclid=Cj0KCQjwgo_5BRDuARIsADDEntQ7QUfXU7ohlfsPK1eitgOQCcgm1W2Kl56VPY_dCwYtHWnifLPCkWMaAp4xEALw_wcB"
+                target="_blank"
+                >Indeed</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://peterdoes.it/2015/12/03/a-personal-exercise-front-end-job-interview-questions-and-my-answers-all/"
+                target="_blank"
+                >Peter Dillon</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </main>
-
     <script type="text/javascript" src="index.js"></script>
-
-</body>
+  </body>
 </html>
