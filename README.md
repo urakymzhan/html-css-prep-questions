@@ -4,8 +4,8 @@
 
 ##### Check this [link](https://urakymzhan.github.io/html-css-prep-questions/) to see questions live
 
-##### If you are interested in **JavaScript** and **ReactJS** Interview Questions. Follow this [link](https://urakymzhan.github.io/js-reactjs-prep-questions/)
+- If you are interested in **JavaScript** and **ReactJS** Interview Questions. Follow this [link](https://urakymzhan.github.io/js-reactjs-prep-questions/)
 
-`Note: Questions in real interview may or may not contain questions from this list`
+- Note: Questions in real interview may or may not contain questions from this list
 
-Ref: **If you believe your question is posted here but you are not credited please reach out to me.**
+- Ref: **If you believe your question is posted here but you are not credited please reach out to me.**
